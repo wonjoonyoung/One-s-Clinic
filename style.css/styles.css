@@ -1,0 +1,17 @@
+
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+
+/* Screens */
+@import "screens/temporary.css";
+
+body{
+    font-family: 'SUIT', sans-serif;
+    background: var(--pri-97);
+}
+
+/* .main-screens {
+    padding: 0px var(--horizintal-space);
+} */
