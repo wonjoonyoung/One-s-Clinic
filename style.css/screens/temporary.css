@@ -250,7 +250,8 @@
   }
 
   .temporary-main-box button:disabled {
-    background-color: var(--gs-60); /* 배경색 변경 */
-    color: var(--gs-90); /* 텍스트 색상 변경 */
+    background: var(--green-70);
+    color: var(--dpri-15);
+    opacity: 0.4;
     cursor: not-allowed; /* 커서 모양 변경 (기본적으로 not-allowed) */
   }
