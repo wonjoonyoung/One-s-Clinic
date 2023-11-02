@@ -1,0 +1,36 @@
+/* 질문 스타일 */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+/* 결과 확인 버튼 스타일 */
+#check-answers {
+    display: block;
+    width: 150px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 에러 메시지 스타일 */
+#answer-required {
+    color: red;
+    font-weight: bold;
+    display: none;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css/screens/text.css">
+    <title>설문조사 페이지</title>
+</head>
+<body>
+    <h1>설문조사 페이지</h1>
+    <form id="survey-form">
+        <p>문항 1) 체중이 어떻게 증가하셨나요?</p>
+        <label>
+            <input type="radio" name="answer1" value="갑작스런 체중증가"> 갑작스런 체중증가
+        </label>
+        <label>
+            <input type="radio" name="answer1" value="꾸준히 증가"> 꾸준히 증가
+        </label>
+        <label>
+            <input type="radio" name="answer1" value="증가 감량 반복"> 증가 감량 반복
+        </label>
+
+        <p>문항 2) 체중이 어떻게 증가하셨나요?</p>
+        <label>
+            <input type="radio" name="answer2" value="답변 1"> 답변 1
+        </label>
+        <label>
+            <input type="radio" name="answer2" value="답변 2"> 답변 2
+        </label>
+        <!-- 다른 질문들 추가 -->
+
+        <p id="answer-required" style="color: red; display: none;">모든 질문에 답변해주세요</p>
+
+        <button type="button" id="check-answers">결과 확인</button>
+    </form>
+    <script src="js/survry.js"></script>
+</body>
+</html>

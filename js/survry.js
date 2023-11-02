@@ -1,46 +1,63 @@
-// 질문과 각 질문의 결과 값 정의
-const questions = [
-    {
-        question: "질문 1: 답변 1",
-        resultValue: 5
-    },
-    {
-        question: "질문 2: 답변 2",
-        resultValue: 3
-    },
-    {
-        question: "질문 3: 답변 3",
-        resultValue: 2
-    },
-    // 추가 질문과 결과 값 정의 가능
-];
+document.addEventListener("DOMContentLoaded", function() {
+    const checkAnswersButton = document.getElementById("check-answers");
+    const surveyForm = document.getElementById("survey-form");
+    const answerRequiredMessage = document.getElementById("answer-required");
 
-// 사용자의 답변을 저장할 객체를 생성
-const userAnswers = {};
+    checkAnswersButton.addEventListener("click", function() {
+        // 여기에 설문 결과 확인 및 처리 로직 추가
+        const answer1 = document.querySelector('input[name="answer1"]:checked');
+        const answer2 = document.querySelector('input[name="answer2"]:checked');
+        // 다른 질문들에 대한 응답도 확인
 
-// 각 질문에 대한 사용자의 답변 입력
-userAnswers[questions[0].question] = "답변 1"; // 예시 답변
-userAnswers[questions[1].question] = "답변 2"; // 예시 답변
-userAnswers[questions[2].question] = "답변 3"; // 예시 답변
+        if (answer1 && answer2 /* && 다른 질문들에 대한 응답 */) {
+            // 모든 질문에 응답이 있을 때 결과 페이지로 이동
+            window.location.href = "../text-result.html";
+        } else {
+            answerRequiredMessage.style.display = "block";
+        }
+    });
+});
 
-// 결과값을 초기화
-let totalScore = 0;
 
-// 각 질문에 대한 결과 값을 누적하여 계산
-for (const question of questions) {
-    const userAnswer = userAnswers[question.question];
-    if (userAnswer === question.resultValue) {
-        totalScore += question.resultValue;
-    }
-}
+document.addEventListener("DOMContentLoaded", function () {
+    // 설문 결과를 저장할 객체
+    const surveyResults = {
+        '갑작스런 체중증가': ['유기산 대사균형 검사', 'HRV (Heart Rate Variability)'],
+        '꾸준히 증가': ['유기산 대사균형 검사', '마이크로바이옴 검사'],
+        '증가 감량 반복': ['유기산 대사균형 검사', 'NK 세포 활성도 검사'],
+        // 다른 문항과 결과 추가
+    };
 
-// 결과를 결과 값 누적이 높은 순서대로 정렬
-questions.sort((a, b) => b.resultValue - a.resultValue);
+    // 결과 값을 저장할 배열
+    const finalResults = [];
 
-// 결과를 보여주기
-console.log("사용자의 결과값: " + totalScore);
-console.log("결과 값 누적에 따른 랭크 순서:");
+    // 결과 확인 버튼 클릭 시
+    document.getElementById("check-answers").addEventListener("click", function () {
+        // 유저의 설문 결과, 여기에서는 예시로 갑작스런 체중증가를 선택한 것으로 가정
+        const userAnswers = [];
+        for (let i = 1; i <= 5; i++) {
+            const answer = document.querySelector(`input[name="answer${i}"]:checked`);
+            if (answer) {
+                userAnswers.push(answer.value);
+            }
+        }
 
-for (const [index, question] of questions.entries()) {
-    console.log(`랭크 ${index + 1}: ${question.question} - 결과 값: ${question.resultValue}`);
-}
+        // 설문 결과를 반복하여 결과 값에 추가
+        userAnswers.forEach((answer) => {
+            if (surveyResults[answer]) {
+                finalResults.push(...surveyResults[answer]);
+            }
+        });
+
+        // 결과 값 중 중복 횟수를 계산하고 정렬
+        const resultCount = finalResults.reduce((result, value) => {
+            result[value] = (result[value] || 0) + 1;
+            return result;
+        }, {});
+
+        const sortedResults = Object.keys(resultCount).sort((a, b) => resultCount[b] - resultCount[a]);
+
+        // 중복이 높은 순서대로 정렬된 결과 값을 출력
+        console.log(sortedResults);
+    });
+});
