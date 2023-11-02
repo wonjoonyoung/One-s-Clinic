@@ -1,0 +1,21 @@
+.header-only-logo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--dpri-15);
+    padding:  20px 0; /* 헤더 로고 이미지 상하 패딩 값*/
+    z-index: 100;
+  }
+
+.header-only-logo__container-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-only-logo__container-logo img {
+    max-width: 188px;
+    height: 42px;
+  }
+
+  

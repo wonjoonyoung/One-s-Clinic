@@ -3,9 +3,12 @@
 @import "variables.css";
 
 /* Components */
+@import "components/header-only-logo.css";
+@import "components/main-notice.css";
 
 /* Screens */
 @import "screens/temporary.css";
+@import "screens/survry.css";
 
 body{
     font-family: 'SUIT', sans-serif;
