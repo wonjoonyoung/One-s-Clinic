@@ -198,7 +198,7 @@
   .temporary-btn{
     text-decoration: none;
   }
-/* 
+/* 버튼 호버 이상으로 일단 비활성화 시켜둠
   .temporary-btn button:hover {
     background: var(--dpri-15);
     color: var(--green-70);
