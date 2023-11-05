@@ -1,15 +1,144 @@
+.test-results-main{
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    margin: 0 10%;
+}
 
+.result-item{
+    margin-bottom: 24px;
+    border: 1px solid ;
+    border: 1px solid var(--pri-85, #E5F5BD);
+    border-radius: 12px;
+    width: 600px;
+}
 
-h1 {
+@media (max-width: 660px) {
+    .result-item{
+        border-radius: 8px;
+        width: 300px;
+    }
+
+}
+
+.result-title-container{
+    display: flex;
+    background: var(--pri-90, #EEF8D3);
+    padding: 16px 30px;
+    border-radius: 12px 12px 0 0;
+}
+
+@media (max-width: 660px) {
+    .result-title-container{
+        padding: 8px 20px;
+        border-radius: 8px 8px 0 0;
+    }
+
+}
+
+.result-order{
+    color: var(--dpri-30, #356554);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 48px */
+}
+
+@media (max-width: 660px) {
+    .result-order{
+        font-size: 18px;
+    }
+
+}
+
+.subtitle-list{
+    padding: 16px 30px;
+}
+
+@media (max-width: 660px) {
+    .subtitle-list{
+        padding: 16px 20px;
+    }
+
+}
+
+.subtitle-list h2{
+    color: var(--gs-15, #262626);
     font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 92.857% */
+    letter-spacing: -1.12px;
+    margin-bottom: 16px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+@media (max-width: 660px) {
+    .subtitle-list h2{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: -1.12px;
+        margin-bottom: 12px;
+    }
+
 }
 
-li {
-    font-size: 16px;
-    margin-bottom: 10px;
+
+.subtitle-item{
+    color: var(--gs-20, #333);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 36px */
+}
+
+@media (max-width: 660px) {
+    .subtitle-item{
+        font-size: 14px;
+    }
+
+}
+
+.goback {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    width: 600px;
+    padding: 12px ;
+    border-radius: 12px;
+    border: 1px solid var(--green-90);
+    background: var(--green-70);
+    color: var(--dpri-15);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    
+  }
+
+  @media (max-width: 660px) {
+
+    .goback {
+        font-size: 16px;
+        width: 300px;
+      }
+}
+
+
+.goback:hover {
+    background: var(--dpri-15);
+    color: var(--green-70);
+  }
+
+  @media (max-width: 660px) {
+
+    .goback:hover {
+        background: var(--green-70);
+        color: var(--dpri-15);
+      }
+    
 }
