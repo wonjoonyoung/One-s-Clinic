@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             // !!!! 문항 2
-            if (answer2Value === '있다)') {
+            if (answer2Value === '있다') {
                 result2Value = ["유기산 대사균형 검사", "유전자 검사"];
             } 
             else {
