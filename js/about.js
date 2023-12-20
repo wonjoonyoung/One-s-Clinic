@@ -6,19 +6,33 @@ function showContent(tabId) {
   // 선택한 탭에 해당하는 내용 표시
   const selectedTabContent = document.getElementById(tabId);
   if (selectedTabContent) {
-      selectedTabContent.classList.add('active');
+    selectedTabContent.classList.add('active');
 
-      // 캐러셀 리셋
+    // 캐러셀 리셋 - 첫 번째 캐러셀
+    if (tabId === 'about-space-content__tab1') {
       const container = selectedTabContent.querySelector(".about-space-content__tab1__items");
       if (container) {
-          container.style.transitionDuration = '0ms';
-          container.style.transform = 'translateX(0%)';
-          setTimeout(() => {
-              container.removeAttribute('style');
-          }, 0);
+        container.style.transitionDuration = '0ms';
+        container.style.left = '-100%'; // 처음 로딩된 사진이 보이도록 수정
+        setTimeout(() => {
+          container.removeAttribute('style');
+        }, 0);
       }
+    }
+
+    // 캐러셀 리셋 - 두 번째 캐러셀
+    const container2 = selectedTabContent.querySelector(".about-space-content__tab2__items");
+    if (container2) {
+      container2.style.transitionDuration = '0ms';
+      container2.style.left = '-100%'; // 처음 로딩된 사진이 보이도록 수정
+      setTimeout(() => {
+        container2.removeAttribute('style');
+      }, 0);
+    }
   }
 }
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
   // 기본으로 선택되는 탭 설정
