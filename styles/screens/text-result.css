@@ -1,0 +1,145 @@
+.test-results-main{
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    margin: 0 10%;
+}
+
+.result-item{
+    margin-bottom: 24px;
+    border: 1px solid ;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    width: 600px;
+    background: #FFFDF6;
+
+}
+
+@media (max-width: 660px) {
+    .result-item{
+        border-radius: 8px;
+        width: 300px;
+    }
+
+}
+
+.result-title-container{
+    display: flex;
+    background: #a7ae9a;
+    padding: 16px 30px;
+    border-radius: 12px 12px 0 0;
+}
+
+@media (max-width: 660px) {
+    .result-title-container{
+        padding: 8px 20px;
+        border-radius: 8px 8px 0 0;
+    }
+
+}
+
+.result-order{
+    color: #FFFDF6;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 48px */
+}
+
+@media (max-width: 660px) {
+    .result-order{
+        font-size: 18px;
+    }
+
+}
+
+.subtitle-list{
+    padding: 16px 30px;
+}
+
+@media (max-width: 660px) {
+    .subtitle-list{
+        padding: 16px 20px;
+    }
+
+}
+
+.subtitle-list h2{
+    color: #433A31;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 92.857% */
+    letter-spacing: -1.12px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 660px) {
+    .subtitle-list h2{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: -1.12px;
+        margin-bottom: 12px;
+    }
+
+}
+
+
+.subtitle-item{
+    color: var(--gs-40, #656567);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 36px */
+}
+
+@media (max-width: 660px) {
+    .subtitle-item{
+        font-size: 14px;
+    }
+
+}
+
+.goback {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    width: 600px;
+    padding: 12px ;
+    border-radius: 12px;
+    background-color: var(--btn);
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    
+  }
+
+  @media (max-width: 660px) {
+
+    .goback {
+        font-size: 16px;
+        width: 300px;
+      }
+}
+
+
+.goback:hover {
+    background-color: var(--pri500);
+    color: white;
+  }
+
+  @media (max-width: 660px) {
+
+    .goback:hover {
+        background: var(--green-70);
+        color: var(--dpri-15);
+      }
+    
+}

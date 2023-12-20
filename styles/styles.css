@@ -1,0 +1,35 @@
+
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+ /*헤더*/
+/* @import "components/main-notice.css"; */
+
+@import "componets/header.css";
+@import "componets/sectiontitle.css";
+@import "componets/btn.css";
+@import "componets/footer.css";
+
+/* Screens */
+@import "screens/main.css";
+@import "screens/about.css";
+@import "screens/introduce.css";
+@import "screens/totalcare.css";
+@import "screens/media.css";
+@import "screens/survry.css";
+@import "screens/test-.css";
+@import "screens/text-result.css";
+@import "screens/notice.css";
+@import "screens/hospital.css";
+/* @import "screens/temporary.css";
+@import "screens/survry.css";
+@import "screens/text.css";
+@import "screens/text-result.css";
+@import "screens/test-.css"; */
+
+body{
+    font-family: 'SUIT', sans-serif;
+    background: var(--bg);
+
+}

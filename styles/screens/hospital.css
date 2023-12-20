@@ -1,0 +1,206 @@
+.hosptial-info-contents{
+    margin-top: 80PX;
+    background-color: #FFFDF6;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.hosptial-info-contents-wrap{
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .hosptial-info-contents-wrap{
+        max-width: 700px;
+    }
+}
+
+
+@media screen and (max-width: 890px) {
+    .hosptial-info-contents-wrap{
+        margin: 0 24px;
+        padding: 36px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        max-width: 1000px;
+    }
+    
+}
+
+
+.hosptial-info-contents-text{
+    margin-right: 48px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .hosptial-info-contents-text{
+        margin-right: 36px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+
+    .hosptial-info-contents-text{
+        margin-right: 0;
+        padding-left: 24px;
+
+    }
+}
+
+
+.hosptial-info-contents-bg{
+    padding: 80PX 12vw;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .hosptial-info-contents-bg{
+        padding: 45PX 12vw;
+    }
+    
+}
+
+.hosptial-info-contents-text h3{
+    color: var(--pri500);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -1.12px;
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .hosptial-info-contents-text h3{
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+}
+
+
+.hosptial-info-contents-text h4{
+    color: var(--pri500);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.8px;
+
+}
+@media screen and (max-width: 1200px) {
+
+    .hosptial-info-contents-text h4{
+        font-size: 16px;
+    }
+}
+
+
+.hosptial-info-contents-text-img{
+    margin-right: 4px;
+    display: inline-block;
+    width: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .hosptial-info-contents-text-img{
+        margin-right: 4px;
+        width: 16px;
+    }
+}
+
+.hosptial-info-contents-text h5{
+    color: var(--gs);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .hosptial-info-contents-text h5{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+.hosptial-info-contents-sns a:first-child{
+    margin-right: 12px;
+}
+
+
+.hosptial-info-contents-img{
+    width: 480px;
+    height: 284px;
+    background-image: url('../../img/png/hospital/1.png');
+    border-radius: 12px;
+}
+@media screen and (max-width: 1200px) {
+
+    .hosptial-info-contents-img{
+        width: 400px;
+        height: 275px;
+        background-image: url('../../img/png/hospital/1-1.png');
+        border-radius: 12px;
+    }
+}
+
+
+@media screen and (max-width: 890px) {
+
+    .hosptial-info-contents-img{
+        width: 320px;
+        height: 180px;
+        background-image: url('../../img/png/hospital/1-2.png');
+        border-radius: 12px;
+        margin-bottom: 36px;
+    }
+}
+
+    .hosptial-info-contents-img2{
+        width: 480px;
+        height: 284px;
+        background-image: url('../../img/png/hospital/2.png');
+        border-radius: 12px;
+    }
+    @media screen and (max-width: 1200px) {
+    
+        .hosptial-info-contents-img2{
+            width: 400px;
+            height: 275px;
+            background-image: url('../../img/png/hospital/2-1.png');
+            border-radius: 12px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 890px) {
+    
+        .hosptial-info-contents-img2{
+            width: 320px;
+            height: 180px;
+            background-image: url('../../img/png/hospital/2-2.png');
+            border-radius: 12px;
+            margin-bottom: 36px;
+        }
+
+    .hosptial-info-contents-sns a span img{
+        width: 48px;
+    }
+}

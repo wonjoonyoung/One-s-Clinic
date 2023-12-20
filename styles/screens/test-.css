@@ -1,0 +1,233 @@
+#test-survey-form{
+    margin: 0 20%;
+    margin-bottom: 56px;
+}
+
+@media (max-width: 660px) {
+    #test-survey-form {
+        margin: 0 5%;
+        margin-bottom: 24px;
+        }
+
+}
+
+.test-survey-form__text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+    margin-top: 48px;
+}
+
+@media (max-width: 660px) {
+    .test-survey-form__text {
+        height: 48px;
+        margin-bottom: 24px;
+        margin-top: 24px;
+        }
+
+}
+
+.test-survey-form__text span {
+    height: 56px;
+    padding: 0 20px;
+    line-height: 56px;
+    text-align: center; 
+    color: var(--bg);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 8px;
+    background: var(--pri300);
+    margin-right: 16px;
+    box-sizing: border-box;
+
+}
+
+@media (max-width: 660px) {
+    .test-survey-form__text span {
+        height: 36px;
+        padding: 0 12px;
+        line-height: 36px;
+        font-size: 12px;
+        border-radius: 6px;
+        margin-right: 12px;
+        }
+
+}
+
+.test-survey-form__text p {
+    color: var(--pri500);
+    font-size: 18px;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: 700;
+    width: 600px;
+}
+
+@media (max-width: 660px) {
+    .test-survey-form__text p {
+        color: var(--gs-40, #656567);
+        font-size: 16px;
+        line-height: 150%;
+        font-style: normal;
+        font-weight: 700;
+        }
+}
+
+
+.test-survey-form__questions{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-left: 12px;
+    border-bottom: 1px solid #DDD;
+}
+
+
+.test-survey-form__questions label {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+
+.test-survey-form__questions label input[type="radio"] {
+    appearance: none;
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    background-color: #ededed;
+    border: 1px solid #7F896C;
+    border-radius: 50%;
+}
+
+@media (max-width: 660px) {
+    .test-survey-form__questions label input[type="radio"]  {
+    width: 20px;
+    height: 20px;
+        }
+}
+
+.test-survey-form__questions label input[type="radio"]:checked {
+    appearance: none;
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    background-color: #ededed;
+    border: 8px solid #656567;
+    border-radius: 50%;
+}
+
+@media (max-width: 660px) {
+    .test-survey-form__questions label input[type="radio"]:checked {
+    width: 20px;
+    height: 20px;
+    background-color: #ededed;
+    border: 8px solid #656567;
+        }
+}
+
+.test-survey-form__questions label span {
+    color: var(--pri500);
+    font-family: SUIT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 36px */
+}
+
+@media (max-width: 660px) {
+    .test-survey-form__questions label span {
+    font-size: 14px;
+        }
+}
+
+#check-answers{
+    margin-top: 24px;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 12px;
+    background-color: var(--btn);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+@media (max-width: 660px) {
+    #check-answers {
+    margin-top: 12px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+        }
+}
+
+#check-answers:hover{
+    background-color: var(--pri500);
+    color: white;
+}
+
+@media (max-width: 660px) {
+    #check-answers:hover {
+    background: var(--btn);
+    color: white;
+        }
+}
+
+#answer-required{
+    margin-top: 16px;
+    text-align: center;
+}
+
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    align-items: center;
+    bottom: 120px; /* 원하는 위치로 조정 */
+    right: 60px; /* 원하는 위치로 조정 */
+    color: var(--pri500); /* 텍스트 색상을 원하는 색상으로 설정 */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+@media (max-width: 660px) {
+    #scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 80px; /* 원하는 위치로 조정 */
+    right: 12px; /* 원하는 위치로 조정 */
+    color: var(--dpri-15); /* 텍스트 색상을 원하는 색상으로 설정 */
+    font-size: 0;
+        }
+}
+
+#scroll-to-top div {
+    background-color: var(--pri500);
+    padding: 8px;
+    margin-left: 12px;
+    border-radius: 50%;
+}
+
+@media (max-width: 660px) {
+    #scroll-to-top div {
+    padding: 4px;
+    opacity: 0.8;
+    margin-left: 0;
+        }
+}
+
+
+#scroll-to-top div img {
+    height: 34px;
+}
+
+@media (max-width: 660px) {
+    #scroll-to-top div img {
+    height: 28px;
+    width: 28px;
+        }
+}

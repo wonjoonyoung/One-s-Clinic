@@ -1,0 +1,63 @@
+.notice-contents {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10vw;
+  }
+
+  .notice-contents-section {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+    justify-content: space-between;
+  }
+
+  .notice-contents-title {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+    color: var(--gs);
+  }
+
+  .notice-contents-title span{
+    font-size: 16px;
+  }
+
+
+  .notice-contents-content span {
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: 28px;
+    font-size: 12px;
+    color: var(--gs);
+
+  }
+
+  .notice-contents-arrow {
+    transition: transform 0.3s;
+  }
+
+  .notice-contents-title.open .notice-contents-arrow {
+    transform: rotate(180deg);
+  }
+
+  .notice-contents-content {
+    display: none;
+    padding: 10px;
+    line-height: 160%;
+    color: var(--gs);
+    font-size: 12px;
+  }
+
+  /* 수정된 부분: active 클래스가 적용될 때 display를 block으로 변경 */
+  .notice-contents-content.active {
+    display: block;
+}
+
+
+.media-main{
+  margin-bottom: 400px;
+}

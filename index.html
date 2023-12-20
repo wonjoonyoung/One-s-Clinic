@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,138 +17,630 @@
 
     <title>One's Clinic</title>
 </head>
+
+
 <body>
-    <header class="header-only-logo">
-        <div class="header-only-logo__container-logo">
-            <img src="img/logo/header_logo.png">
+     <header class="header" id="header">        
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="img/png/header/logo_main.png">
+            </a>
         </div>
+
+        <nav class="header-nav">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="introduce.html">기능의학</a></li>
+                <li><a href="totalcare.html">치료항목</a></li>
+                <!-- <li><a href="media.html">미디어</a></li> -->
+                <li><a href="notice.html">공지사항</a></li>
+                <li><a href="hospital.html">병원안내</a></li>
+            </ul>
+        </nav>
+
+        <img class="header-bar" src="img/svg/haeder/bars-3-bg.svg" alt="">
     </header>
 
-    <main class="main-text">
-        <div class="main-text__container-logo">
-            <img src="img/logo/temporary_body_logo.png">
-        </div>
+    <div class="mo-menu">
+        <img class="mo-menuX" src="img/svg/haeder/x-mark.svg" alt="">
+        <ul>
+            <a href="about.html"><li>ABOUT</li></a>
+            <a href="introduce.html"><li>기능의학</li></a>
+            <a href="totalcare.html"><li>치료항목</li></a>
+            <!-- <a href="media.html"><li>미디어</li></a> -->
+            <a href="notice.html"><li>공지사항</li></a>
+            <a href="hospital.html"><li>병원안내</li></a>
+        </ul>
+    </div>
 
-        <div class="main-text__container-text">
-            <h2>11월 말 재오픈 예정</h2>
-            <h1>홈페이지 리뉴얼 중 입니다</h1>
-            <p>보다 좋은 서비스를 제공하기 위해 홈페이지 리뉴얼 중에 있습니다.<br>
-                빠른 시일 내에 찾아 뵙겠습니다.</p>
-        </div>
-
-        <div id="temporary-box1" class="temporary-main-box">
-                <h3>압구정점</h3>
-                <span class="temporary-main-box__subtitle">
-                    (확장 공사중 : 12월 그랜드오픈 예정)
-                </span>
-            <div class="temporary-main-box__item">
-                <img src="img/icon/GPS.svg">
-                <span>서울 강남구 압구정로 308 2층</span>
-            </div>
-
-            <div class="temporary-main-box__button-container">
-                <a target="_blank" href="http://pf.kakao.com/_xiWxfcxj/chat">
-                    <div id="temporary-main-box__button-container__kakao" class="temporary-main-box__button-container-btn">
-                    <img src="img/icon/kakao.svg">
-                    <span>카카오톡 상담</span>
-                    </div>
-                </a>
-                <a target="_blank" href="https://talk.naver.com/ct/w41ur2">
-                    <div id="temporary-main-box__button-container__naver" class="temporary-main-box__button-container-btn">
-                    <img src="img/icon/naver.svg">
-                    <span>네이버 톡톡 상담</span>
-                    </div>
-                </a>
-            </div>
-            
-
-            <!-- 이전 버전내용 (전화번호, 버튼 있음) -->
-            <!-- <div class="temporary-main-box__item">
-                <img src="img/icon/TEL.svg">
-                <span>02 516 1226</span>
-            </div>
-            <a target="_blank" href="https://map.naver.com/p/search/%EC%9B%90%EC%8A%A4%ED%81%B4%EB%A6%AC%EB%8B%89%20%EC%95%95%EA%B5%AC%EC%A0%95/place/1729139555?c=15.00,0,0,0,dh&isCorrectAnswer=true">
-                <button disabled>확장 공사중(12월 그랜드오픈 예정)</button>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            </a>
->>>>>>> 58b212a (사전 공지 페이지 수정..)
-            </a> -->
-        </div>
-
-        <div id="temporary-box2" class="temporary-main-box">
-            <h3>목동점</h3>
-            <div class="temporary-main-box__item">
-                <img src="img/icon/GPS.svg">
-                <span>서울 양천구 오목로 345 목동슬로우스퀘어 2층</span>
-            </div>
-
-            <div class="temporary-main-box__item">
-                <img src="img/icon/TEL.svg">
-                <span>02 6949 2091</span>
-            </div>
-
-            <div class="temporary-main-box__button-container">
-                <a target="_blank" href="http://pf.kakao.com/_BXRLxj/chat">
-                    <div id="temporary-main-box__button-container__kakao" class="temporary-main-box__button-container-btn">
-                    <img src="img/icon/kakao.svg">
-                    <span>카카오톡 상담</span>
-                    </div>
-                </a>
-                <a target="_blank" href="https://talk.naver.com/ct/w40oc8">
-                    <div id="temporary-main-box__button-container__naver" class="temporary-main-box__button-container-btn">
-                    <img src="img/icon/naver.svg">
-                    <span>네이버 톡톡 상담</span>
-                    </div>
-                </a>
-            </div>
-
-            <a class="temporary-btn" target="_blank" href="https://map.naver.com/p/search/%EC%9B%90%EC%8A%A4%ED%81%B4%EB%A6%AC%EB%8B%89%20%EB%AA%A9%EB%8F%99/place/1212163600?c=15.00,0,0,0,dh&isCorrectAnswer=true">
-                <button>예약하기</button>
+    <!-- <div class="header-mobile">        
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="img/png/header/logo_main.png">
             </a>
         </div>
 
+        <nav class="header-nav">
 
-    </main>
+        </nav>
+    </div> -->
 
-    <footer>
-        <div class="footer-warp">
-            <div class="footer-logo">
-                <img src="img/logo/header_logo.png">
+<main class="main-main">
+<div class="main-hero">
+        <div class="main-hero-text">
+            <h2 class="main-hero-text__third">Reverse Aging</h2>
+            <h3 class="main-hero-text__subtitle">생체시간을 되돌리는<br> 토탈 라이프스타일 케어</h3>
+            <h1 class="main-hero-text__title">ONE'S CLINIC</h1>
+        </div>
+
+        <div class="main-hero-info">
+            <div class="main-hero-info__content">
+                <span class="main-hero-info__subtitle">누적 환자수</span>
+                <span class="main-hero-info__title">50,000<span>+<span></span>
+            </div>
+            <div class="main-hero-info__content">
+                <span class="main-hero-info__subtitle">월간 정기 내원 환자 수</span>
+                <span class="main-hero-info__title">500<span>+<span></span>
+            </div>
+            <div class="main-hero-info__content">
+                <span class="main-hero-info__subtitle">평균 진료 시간</span>
+                <span class="main-hero-info__title">30<span>min<span></span>
+            </div>
+        </div>
+
+        <div class="main-hero-info__scroll">
+            <div class="main-hero-info__scroll__item">
+                <img src="img/svg/main/hero_img_arrow_down.svg">
+                <span>Scroll</span>
+            </div>
+        </div>
+</div>
+
+
+<div class="main-introduce">
+    <H2>그동안 없던 <span>건강 솔루션</span></H2>
+    <!-- <h3>One's 는 기능의학을 기반으로, 건강을 유지하며 나이를 드러내는 과정을 늦추고자 합니다.<br>
+        몸과 마음을 젋게 유지하며, 당신의 더 나은 내일을 만듭니다.
+    </h3> -->
+</div>
+
+<div class="main-intro">
+    <div class="main-intro-wrap">
+        <div class="main-intro-wrap-test-warp">
+        <div class="main-intro-title">
+            <span>나를  가장 잘 아는 주치의</span>
+            ONE'S CLINIC
+        </div>
+        <div class="main-intro-subtitle">
+            <div class="main-intro-subtitle__text web">
+                기능 의학을 기반으로 마인드와 바디의 밸런스를 이룸으로써 Reverse Aging(역노화)를 추구합니다.<br>
+                <!-- 아픈곳을 가장 편하게 이야기 할 수 있고, 아프기 전에 건강을 먼저 챙길수 있는 공간에서<br> -->
+                여러분의 주치의로서, 적은 수의 진료를 보더라도 더 좋은 치료를 제공할 것을 약속드립니다. 
             </div>
 
-            <div class="footer-info">
-                <div class="footer-info-title Apgujeong">
-                    <h3>원스의원 압구정</h3>
-                    <h4>서울특별시 강남구 압구정로 308(신사동) 2층, 3층</h4>
-                    <p class="Apgujeong-info-1">
-                        대표자: 이해인외 1명<br>
-                        사업자번호: 854-91-01006 <br>
-                        TEL: 02-516-1226<br>
-                        FAX: 02-518-4787
-                    </p>
+            <div class="main-intro-subtitle__text mobile">
+                원스는 기능 의학을 기반으로 마인드와 바디의 밸런스를 <br>
+                이룸으로써. Reverse Aging(역노화)를 추구합니다.<br>
+                <!-- 아픈곳을 가장 편하게 이야기 할 수 있고,  <br> 아프기 전에 건강을 먼저 챙길수 있는 공간에서<br> -->
+                여러분의 주치의로서, 적은 수의 진료를 보더라도<br>더 좋은 치료를 제공할 것을 약속드립니다. 
+            </div>
+            <div class="main-intro-subtitle__wrap web">
+                <div class="main-intro-subtitle__info">
+                    <div class="main-intro-subtitle__info__title">
+                        누적 환자 수
+                    </div>
+                    <div class="main-intro-subtitle__info__subtitle">
+                        50,000 +
+                    </div>
                 </div>
-                <div class="footer-info-title mokdong">
-                    <h3>원스의원 목동</h3>
-                    <h4>서울특별시 양천구 오목로 345, 2층</h4>
-                    <p class="Apgujeong-info-1">
-                        대표자: 원보연<br>
-                        사업자번호: 255-91-02042<br>
-                        TEL: 02-6949-2091<br>
-                        FAX: 02-6949-2092</p>
+
+                <div class="main-intro-subtitle__info">
+                    <div class="main-intro-subtitle__info__title">
+                        전문의 수
+                    </div>
+                    <div class="main-intro-subtitle__info__subtitle">
+                        3
+                    </div>
+                </div>
+
+                <div class="main-intro-subtitle__info">
+                    <div class="main-intro-subtitle__info__title">
+                        평균 진료 시간
+                    </div>
+                    <div class="main-intro-subtitle__info__subtitle">
+                        30min
+                    </div>
+                </div>
+
+                <div class="main-intro-subtitle__info">
+                    <div class="main-intro-subtitle__info__title">
+                        월간 정기 내원 환자 수
+                    </div>
+                    <div class="main-intro-subtitle__info__subtitle">
+                        500 +
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-intro-subtitle__wrap mobile">
+                <div class="main-intro-subtitle__wrap-mo-line">
+                <div class="main-intro-subtitle__info">
+                    <div class="main-intro-subtitle__info__title">
+                        누적 환자 수
+                    </div>
+                    <div class="main-intro-subtitle__info__subtitle">
+                        50,000 +
+                    </div>
+                </div>
+
+                <div class="main-intro-subtitle__info">
+                    <div class="main-intro-subtitle__info__title">
+                        전문의 수
+                    </div>
+                    <div class="main-intro-subtitle__info__subtitle">
+                        3
+                    </div>
+                </div>
+            </div>
+            <div class="main-intro-subtitle__wrap-mo-line">
+                <div class="main-intro-subtitle__info">
+                    <div class="main-intro-subtitle__info__title">
+                        평균 진료 시간
+                    </div>
+                    <div class="main-intro-subtitle__info__subtitle">
+                        30min
+                    </div>
+                </div>
+
+                <div class="main-intro-subtitle__info">
+                    <div class="main-intro-subtitle__info__title">
+                        월간 정기 내원 환자 수
+                    </div>
+                    <div class="main-intro-subtitle__info__subtitle">
+                        500 +
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+        </div>  
+    </div>
+        <div class="main-btn">
+            <a href="about.html">
+                <button id="btn-large">
+                원스클리닉 소개
+                </button>
+            </a>
+            </div>  
+    </div>
+</div>
 
-    <a href="survry.html" class="go-to-test">
-        <div>
-            <img src="img/icon/test.svg">
-        </div>
-        Bespok Plan
-        <span>무료 검사</span>
+
+
+
+<div class="main-introduce-graphic">
+    <h2 class="main-introduce-graphic-title">ONE’SPOKE – ONE’STOP</h2>
+    <div class="main-introduce-graphic__info">
+        <img src="img//svg/main/main-introduce.svg">
+
+            <div class="main-introduce-graphic-wrap">
+                <div class="main-introduce-graphic-wrap__info__text">
+                    <h3>ONE’SPOKE</h3> 
+                    <p>당신의 건강을 “비스포크(bespoke)” 해서 <br>
+                     최적의 솔루션을 제공합니다.</p>
+                </div>
+                <div class="main-introduce-graphic-wrap__info__text">
+                    <h3>ONE’STOP</h3> 
+                    <p>다양한 치료를 여러 센터를 통해서가 아닌,<br>
+                    하나의 공간에서 한 번에 받을 수 있습니다.</p>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="functional-introduce">
+    <div class="functional-introduce-text sectiontitle-left">
+        <h3>본질에 집중하는 치료</h3>
+        <h2>기능의학</h2>
+        <p class="web">
+            건강 문제의 근본은 우리 몸을 구성하는 '세포의 기능'에 있습니다. <br>
+            원스클리닉은 기능의학을 추구하며 건강의 '본질'과 노화의 역행에 집중합니다.
+        </p>
+
+        <p class="mobile">
+            건강 문제의 근본은 우리 몸을 구성하는 <br> '세포의 기능'에 있습니다.<br> 
+            원스클리닉은 기능의학을 추구하며<br>건강의 '본질'과 노화의 역행에 집중합니다.
+        </p>
+    </div>
+    <a href="introduce.html" class="functional-introduce-btn">
+        <button id="btn-large">자세히 보기</button>
     </a>
+</div>
 
+<div class="functional-introduce-list">
+    <!-- <div class="functional-introduce-list-warp">
+        <div class="functional-introduce-list-warp__icon">
+            <img src="img/svg/main/functional-introduce-icon-glass.svg">
+        </div>
+        <h3 class="functional-introduce-list-warp__title">
+            질병의 원인 찾기
+        </h3>
+        <p class="functional-introduce-list-warp__discription">
+            질병을 발견하고 치료하는 것은 물론 , 
+            그 질병이 "왜" 발생했는지에 대한 근본적인 원인과 
+            세포수준에서의 문제를 파악해 치료하는 의학입니다. 
+        </p>
+    </div> -->
+    <img src="img/png/main/total care.png" class="functional-introduce-img"/>
+
+
+    <div class="functional-introduce-list-warp">
+
+        <div class="functional-introduce-list-warp__icon">
+            <img src="img/svg/main/functional-introduce-icon-batery.svg">
+        </div>
+        <h3 class="functional-introduce-list-warp__title">
+            세포 수준의 문제 해결
+        </h3>
+        <p class="functional-introduce-list-warp__discription">
+            질병을 발견하고 치료하는 것은 물론 , 
+            그 질병이 "왜" 발생했는지에 대한 근본적인 원인과 
+            세포수준에서의 문제를 파악해 치료하는 의학입니다.
+        </p>
+    </div>
+
+    <!-- <div class="functional-introduce-list-warp">
+        <div class="functional-introduce-list-warp__icon">
+            <img src="img/svg/main/functional-introduce-icon-fix.svg">
+        </div>
+        <h3 class="functional-introduce-list-warp__title">
+            원인 교정의 초점
+        </h3>
+        <p class="functional-introduce-list-warp__discription">
+            질병과 수많은 건강상의 문제들은
+            유전적, 살아온 생활 습관들이 원인입니다. 현재 환자의 건강 상태를 자세히 파악하여
+            불균형을 찾아 교정하고 보충합니다.
+        </p>
+    </div> -->
+</div>
+
+
+
+
+<div class="totalcare-introduce">
+    <div class="totalcare-introduce-text sectiontitle-left">
+        <h3>근본을 해결하는 치료 프로그램</h3>
+        <h2>One's Clinic 토탈케어</h2>
+        <p class="web">
+            대부분의 건강 문제는 노화, 비만, 면역의 영역 안에서 유기적으로 발생합니다. <br>
+            원스클리닉은 이 모든 영역을 동시에 해결할 수 있는 토탈 치료솔루션을 제안합니다.
+        </p>
+
+        <p class="mobile">
+            대부분의 건강 문제는 노화, 비만, 면역의 영역 안에서<br>
+            유기적으로 발생합니다. <br>
+            원스클리닉은 이 모든 영역을 동시에 해결할 수 있는<br> 토탈 치료솔루션을 제안합니다.
+        </p>
+    </div>
+</div>
+
+
+<div class="totalcare-introduce-list web">
+    <div class="totalcare-introduce-list-warp">
+        <div class="totalcare-introduce-list__icon">
+            <img src="img/svg/main/totalcare-introduce-list-aging.svg">
+        </div>
+        <span>Reverse-Aging <br>(역노화)</span>
+    </div>
+
+    <div class="totalcare-introduce-list-warp">
+        <div class="totalcare-introduce-list__icon">
+            <img src="img/svg/main/totalcare-introduce-list-slim.svg">
+        </div>
+        <span>One'Slim Balance<br>(다이어트)</span>
+    </div>
+
+    <div class="totalcare-introduce-list-warp">
+        <div class="totalcare-introduce-list__icon">
+            <img src="img/svg/main/totalcare-introduce-list-imm.svg">
+        </div>
+        <span>Immune<br>(면역)</span>
+    </div>
+
+    <div class="totalcare-introduce-list-warp">
+        <div class="totalcare-introduce-list__icon">
+            <img src="img/svg/main/totalcare-introduce-list-mind.svg">
+        </div>
+        <span>Mind/Body Balance<br>(마인드/바디 밸런스)</span>
+    </div>
+
+    <div class="totalcare-introduce-list-warp">
+        <div class="totalcare-introduce-list__icon">
+            <img src="img/svg/main/totalcare-introduce-list-skin.svg">
+        </div>
+        <span>Medical Skin Care<br>(메디컬 스킨케어)
+        </span>
+    </div>
+
+</div>
+
+
+
+<div class="totalcare-introduce-list mobile">
+    <div class="totalcare-introduce-list-warp-mo">
+    <div class="totalcare-introduce-list-warp">
+        <div class="totalcare-introduce-list__icon">
+            <img src="img/svg/main/totalcare-introduce-list-aging.svg">
+        </div>
+        <span>Reverse-Aging <br>(역노화)</span>
+    </div>
+
+    <div class="totalcare-introduce-list-warp">
+        <div class="totalcare-introduce-list__icon">
+            <img src="img/svg/main/totalcare-introduce-list-slim.svg">
+        </div>
+        <span>One'Slim Balance<br>(다이어트)</span>
+    </div>
+
+    <div class="totalcare-introduce-list-warp">
+        <div class="totalcare-introduce-list__icon">
+            <img src="img/svg/main/totalcare-introduce-list-imm.svg">
+        </div>
+        <span>Immune<br>(면역)</span>
+    </div>
+</div>
+<div class="totalcare-introduce-list-warp-mo">
+
+    <div class="totalcare-introduce-list-warp list-warp-margin">
+        <div class="totalcare-introduce-list__icon">
+            <img src="img/svg/main/totalcare-introduce-list-mind.svg">
+        </div>
+        <span>Mind/Body Balance<br>(마인드/바디 밸런스)</span>
+    </div>
+
+    <div class="totalcare-introduce-list-warp list-warp-margin">
+        <div class="totalcare-introduce-list__icon">
+            <img src="img/svg/main/totalcare-introduce-list-skin.svg">
+        </div>
+        <span>Medical Skin Care<br>(메디컬 스킨케어)
+        </span>
+    </div>
+</div>
+</div>
+
+<a href="totalcare.html" class="totalcare-introduce-list-btn">
+    <button id="btn-large">
+        케어 프로그램 자세히 보기
+    </button>
+</a>
+
+
+
+<!-- 
+
+<div class="media-introduce">
+
+    <div class="media-introduce-text-wrap">
+        <div class="media-introduce-text sectiontitle-bg-brown">
+            <h3>원스클리닉의 소식을 가장 빠르게</h3>
+            <h2>원스 미디어</h2>
+        </div>
+
+        <a href="media.html">
+            <button id="btn-large-white">자세히 보기</button>
+        </a>
+    </div>
+
+    <div class="media-introduce-slider">
+        <button class="media-introduce-media-btn prev">
+            <span>prev</span>
+        </button>
+
+        <div class="media-introduce-slider-warp">
+            <div class="media-introduce-media__content">
+                <div class="media-introduce-media__content-items">
+                   <div class="media-introduce-media__content-item">
+                    <a> <div class="media-introduce-media__content-item__content main-media-item1">
+                            <div class="media-introduce-media__content-item__content__text">
+                                원스클리닉이 지난 달 목동점 선오픈에 이어 <br>4월 10일 압구정점을 오픈했다.
+                            </div>
+                        </div>
+                    </div></a>
+                    <div class="media-introduce-media__content-item">
+                        <a> <div class="media-introduce-media__content-item__content main-media-item2">
+                                <div class="media-introduce-media__content-item__content__text">
+                                    원스클리닉이 지난 달 목동점 선오픈에 이어 <br>4월 10일 압구정점을 오픈했다.
+                                </div>
+                            </div>
+                        </div></a>
+                        <div class="media-introduce-media__content-item">
+                            <a> <div class="media-introduce-media__content-item__content main-media-item3">
+                                    <div class="media-introduce-media__content-item__content__text">
+                                        원스클리닉이 지난 달 목동점 선오픈에 이어 <br>4월 10일 압구정점을 오픈했다.
+                                    </div>
+                                </div>
+                            </div></a>
+                            <div class="media-introduce-media__content-item">
+                                <a> <div class="media-introduce-media__content-item__content main-media-item4">
+                                        <div class="media-introduce-media__content-item__content__text">
+                                            원스클리닉이 지난 달 목동점 선오픈에 이어 <br>4월 10일 압구정점을 오픈했다.
+                                        </div>
+                                    </div>
+                                </div></a>
+                                    <div class="media-introduce-media__content-item">
+                        <a> <div class="media-introduce-media__content-item__content main-media-item1">
+                                <div class="media-introduce-media__content-item__content__text">
+                                    원스클리닉이 지난 달 목동점 선오픈에 이어 <br>4월 10일 압구정점을 오픈했다.
+                                </div>
+                            </div>
+                        </div></a>
+                        <div class="media-introduce-media__content-item">
+                            <a> <div class="media-introduce-media__content-item__content main-media-item2">
+                                    <div class="media-introduce-media__content-item__content__text">
+                                        원스클리닉이 지난 달 목동점 선오픈에 이어 <br>4월 10일 압구정점을 오픈했다.
+                                    </div>
+                                </div>
+                            </div></a>
+                            <div class="media-introduce-media__content-item">
+                                <a> <div class="media-introduce-media__content-item__content main-media-item3">
+                                        <div class="media-introduce-media__content-item__content__text">
+                                            원스클리닉이 지난 달 목동점 선오픈에 이어 <br>4월 10일 압구정점을 오픈했다.
+                                        </div>
+                                    </div>
+                                </div></a>
+                            <div class="media-introduce-media__content-item">
+                                <a> <div class="media-introduce-media__content-item__content main-media-item3">
+                                        <div class="media-introduce-media__content-item__content__text">
+                                            원스클리닉이 지난 달 목동점 선오픈에 이어 <br>4월 10일 압구정점을 오픈했다.
+                                        </div>
+                                    </div>
+                                </div></a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="media-introduce-media-btn next">
+            <span>Next</span>
+        </button>
+
+    </div>
+</div> -->
+
+
+<div class="hospital-introduce">
+    <div class="hospital-introduce-text sectiontitle-left">
+        <h3>원스클리닉</h3>
+        <h2>병원 위치 안내</h2>
+        <p>
+            프리미엄 시설을 갖춘 웰니스 시설을 소개합니다.
+        </p>
+    </div>
+    <a href="hospital.html" class="hospital-introduce-btn">
+        <button id="btn-large">자세히 보기</button>
+    </a>
+</div>
+
+<div class="hospital-introduce-list">
+    <div class="hospital-introduce-list__info">
+        <div class="hospital-introduce-list__info__img1">
+            <!-- <div class="hospital-introduce-list__info__img__icon">
+                <img src="img/svg/main/hospital-more.svg">
+            </div> -->
+        </div>
+
+        <div class="hospital-introduce-list__info__text">
+            <h3>압구정 ONE'STOP 프리미엄 토탈케어센터</h3>
+            <div class="hospital-introduce-list__info__text__info">
+                <span>
+                    <img src="img/svg/main/hospital-gps.svg">
+                </span>서울시 강남구 압구정로 308 2층
+            </div>
+            <div class="hospital-introduce-list__info__text__info">
+                <span>
+                    <img src="img/svg/main/hospital-tel.svg">
+                </span>02 1234 1234
+            </div>
+        </div>
+        <div class="hospital-introduce-list__info__sns">
+            
+            <a href="http://pf.kakao.com/_xiWxfcxj/chat">
+            <span>
+                <img src="img/svg/main/hospital-kakao.svg">
+            </span>
+            </a>
+
+            <a href="https://talk.naver.com/ct/w41ur2">
+                <span>
+                    <img src="img/svg/main/hospital-naver.svg">
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <div class="hospital-introduce-list__info">
+        <div class="hospital-introduce-list__info__img2">
+            <!-- <div class="hospital-introduce-list__info__img__icon">
+                <img src="img/svg/main/hospital-more.svg">
+            </div> -->
+        </div>
+
+        <div class="hospital-introduce-list__info__text">
+            <h3>목동 ONE'STOP 토탈케어센터</h3>
+            <div class="hospital-introduce-list__info__text__info">
+                <span>
+                    <img src="img/svg/main/hospital-gps.svg">
+                </span>서울 양천구 오목로 345 목동슬로우스퀘어 2층
+            </div>
+            <div class="hospital-introduce-list__info__text__info">
+                <span>
+                    <img src="img/svg/main/hospital-tel.svg">
+                </span>02 6949 2091
+            </div>
+        </div>
+
+        <div class="hospital-introduce-list__info__sns">
+            <a href="http://pf.kakao.com/_BXRLxj/chat">
+                <span>
+                    <img src="img/svg/main/hospital-kakao.svg">
+                </span>
+            </a>
+            <a href="https://talk.naver.com/ct/w40oc8">
+                <span>
+                    <img src="img/svg/main/hospital-naver.svg">
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="reservation-info">
+    <h3>방문 전 예약</h3>
+    <h4>원스클리닉은 양질의 진료 서비스를 제공하기 위해<br>
+        필수 예약제로 이루어집니다.<br>
+        첫 진료시에는 충분한 시간을 염두하시어 방문해주시길 바랍니다.</h4>
+</div>
+
+</main>
+
+<a href="survry.html" class="go-to-test" id="goToTest">
+    <div>
+        <img src="img/svg/main/test.svg">
+    </div>
+    Bespok Plan<br>
+    <span>무료 검사</span>
+</a>
+
+<footer>
+    <div class="footer-warp">
+        <div class="footer-logo">
+            <img src="img/png/header/logo_main.png">
+        </div>
+
+        <div class="footer-info">
+            <div class="footer-info-title Apgujeong">
+                <h3>원스의원 압구정점</h3>
+                <h4>서울특별시 강남구 압구정로 308(신사동) 2층, 3층</h4>
+                <p class="Apgujeong-info-1">
+                    대표자: 이해인, 송종언<br>
+                    사업자번호: 854-91-01006 <br>
+                    TEL: 02-516-1226<br>
+                    FAX: 02-518-4787
+                </p>
+            </div>
+            <div class="footer-info-title mokdong">
+                <h3>원스의원 목동점</h3>
+                <h4>서울특별시 양천구 오목로 345, 2층</h4>
+                <p class="Apgujeong-info-1">
+                    대표자: 원보연<br>
+                    사업자번호: 255-91-02042<br>
+                    TEL: 02-6949-2091<br>
+                    FAX: 02-6949-2092</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"> </script>
 </body>
-</html>
+</html>             
