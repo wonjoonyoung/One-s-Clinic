@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo/favicon.png" type="image/x-icon">
+    <meta name="description" content="현대인의 건강 주치의, 원스 클리닉">
+  
+    <!-- OGP 태그로 썸네일 이미지 설정 -->
+    <meta property="og:title" content="원스클리닉">
+    <meta property="og:description" content="현대인의 건강 주치의, 원스 클리닉">
+    <meta property="og:image" content="https://raw.githubusercontent.com/wonjoonyoung/One-s-Clinic/main/img/meta/kakao_img.png"> <!-- 이미지의 URL을 입력하세요 -->
+    <meta property="og:url" content="https://onesclinic.co.kr/">
+    <meta property="og:type" content="website">
+    
+    <title>One's Clinic - Bespoke 검사 결과</title>
+</head>
+<body>
+    <header class="header-bg">        
+        <div class="header-bg-logo">
+            <a href="index.html">
+                <img src="img/png/header/logo_bg.png">
+            </a>
+        </div>
+
+        <nav class="header-bg-nav">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="introduce.html">기능의학</a></li>
+                <li><a href="totalcare.html">치료항목</a></li>
+                <!-- <li><a href="media.html">미디어</a></li> -->
+                <li><a href="notice.html">공지사항</a></li>
+                <li><a href="hospital.html">병원안내</a></li>
+            </ul>
+        </nav>
+
+        <img class="header-bg-bar" src="img/svg/haeder/bars-3.svg" alt="">
+    </header>
+
+    <div class="mo-menu">
+        <img class="mo-menuX" src="img/svg/haeder/x-mark.svg" alt="">
+        <ul>
+            <a href="about.html"><li>ABOUT</li></a>
+            <a href="introduce.html"><li>기능의학</li></a>
+            <a href="totalcare.html"><li>치료항목</li></a>
+            <!-- <a href="media.html"><li>미디어</li></a> -->
+            <a href="notice.html"><li>공지사항</li></a>
+            <a href="hospital.html"><li>병원안내</li></a>
+        </ul>
+    </div>
+
+    <main class="main-text">
+
+        <div class="introduce-intro">
+            <div class="introduce-intro-text sectiontitle-left">
+                <h2>Bespok Plan 검사 결과</h2>
+                <p>
+                    결과에 따른 개인 맟춤 추천 Clinic 리스트입니다.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <div class="test-results-main">
+        <ul id="test-results-list">
+        <!-- JavaScript에서 동적으로 결과 항목을 추가할 것입니다 -->
+        </ul>
+    </div>
+    
+    <a class="goback" href="survry.html">
+        돌아가기
+    </a>
+    <script src="js/text-result.js"></script>
+</body>
+</html>
