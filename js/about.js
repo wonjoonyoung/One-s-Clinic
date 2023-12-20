@@ -52,52 +52,23 @@ function translateContainer(direction) {
   const selectedBtn = (direction === 1) ? 'prev' : 'next';
   container.style.transitionDuration = '1000ms';
   container.style.transform = `translateX(${direction * (100 / 11)}%)`;
-  container.ontransitionend = () => reorganizeEl(selectedBtn); // 수정된 부분
+  container.ontransitionend = () => reorganizeEl(selectedBtn);
 }
 
-function reorganizeEl(selectedBtn) { // 함수 이름 수정
+function reorganizeEl(selectedBtn) {
   container.removeAttribute('style');
   (selectedBtn === 'prev') ? container.insertBefore(container.lastElementChild, container.firstElementChild) : container.appendChild(container.firstElementChild);
 }
 
-// addEvent 함수 호출
+// addEvent2 함수 호출
 addEvent();
 
-// addEvent 함수 호출 이후 6000으로 설정된 setInterval
+// addEvent2 함수 호출 이후 6000으로 설정된 setInterval
 setInterval(() => {
   nextBtn.click();
 }, 6000);
 
   
-  
-
-
-
-
-// const container = document.querySelector(".about-space-content__tab1__items");
-// const prevBtn = document.querySelector(".about-space-content__tab1__img__arrows_up");
-// const nextBtn = document.querySelector(".about-space-content__tab1__img__arrows_down"); 
-
-// (function addEvent(){
-//   prevBtn.addEventListener('click', translateContainer.bind(this, 1));
-//   nextBtn.addEventListener('click', translateContainer.bind(this, -1));
-// })();
-
-// function translateContainer(direction){
-//   const selectedBtn = (direction === 1) ? 'prev' : 'next';
-//   container.style.transitionDuration = '1000ms';
-//   container.style.transform = `translateX(${direction * (100 / 11)}%)`;
-//   container.ontransitionend = () => reorganizeEl(selectedBtn);
-// }
-
-// function reorganizeEl(selectedBtn) {
-//   container.removeAttribute('style');
-//   (selectedBtn === 'prev') ? container.insertBefore(container.lastElementChild, container.firstElementChild): container.appendChild(container.firstElementChild);
-// }
-
-// setInterval(() => {
-//     nextBtn.click();
-//   }, 6000);
 
 
 
