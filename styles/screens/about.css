@@ -916,8 +916,8 @@
     }
 
 .about-space-content__tab1__team__info__profile-stroke{
-    width: 100%;
-    height: 30vw;
+    width: 60%;
+    height: 20vw;
     border: 1px solid #392613;
     border-radius: 12px;
 
@@ -951,6 +951,7 @@
     background-image: url('../../img/png/about/doctor1.png');
     box-sizing: border-box;
     background-size: cover;
+    background-position: center;
 }
 
 .about-space-content__tab1__team__info__profile-img2{

@@ -49,7 +49,7 @@
     padding: 10px;
     line-height: 160%;
     color: var(--gs);
-    font-size: 12px;
+    font-size: 14px;
   }
 
   /* 수정된 부분: active 클래스가 적용될 때 display를 block으로 변경 */

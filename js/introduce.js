@@ -1,7 +1,5 @@
 
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
     // 기본으로 선택되는 탭 설정
     const defaultTabId = 'introduce-introduce-bar-contents__tab1';
@@ -625,4 +623,20 @@ window.onbeforeunload = function () {
 }
 
 
- 
+
+window.onload = function() {
+    var sectionToScroll = window.location.hash.substr(1); // Extract the section ID from the URL
+    if (sectionToScroll) {
+        scrollToSection(sectionToScroll);
+    }
+};
+
+// Function to scroll to a specific section based on its ID
+function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+}
