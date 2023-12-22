@@ -224,6 +224,46 @@
     }   
 }
 
+.totalcare-aging-clinic-content span{
+    margin-top: 12px;
+    display: block;
+    color: #656567;
+}
+
+.xso{
+    margin-top: 12px;
+    border-radius: 16px;
+    width: 500px;
+}
+
+@media screen and (max-width: 890px) {
+
+    .xso{
+        margin-top: 12px;
+        border-radius: 16px;
+        width: 280px;
+    }
+}
+
+
+.rejuran{
+    margin-top: 36px;
+    width: 360px;
+}
+
+#bold{
+    font-weight: 600;
+}
+
+@media screen and (max-width: 890px) {
+
+    .rejuran{
+        margin-top: 36px;
+        width: 280px;
+    }
+}
+
+
 .totalcare-aging-clinic-content h5{
     color: #636C53;
     font-weight: 700;
