@@ -156,7 +156,7 @@
 
 
 .introduce-carepart-content-img{
-    width: 30vw;
+    width: 38vw;
     height: 30vw;
     border-radius: 16px;
     background-image: url("../../img/png/intro/1.png");
@@ -179,7 +179,7 @@
             .introduce-carepart-content-img{
                 margin: 0 auto;
                 width: 320px;
-                height: 360px;
+                height: 260px;
                 border-radius: 16px;
                 background-image: url("../../img/png/intro/3.png");
                 background-size: cover;
